@@ -1,0 +1,178 @@
+.headerWeb {
+  /* background-color: aqua; */
+  height: 20%;
+  text-align: center;
+  background: linear-gradient(to right , aqua , black);
+}
+
+.headerWeb .title {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  line-height:5 ;
+  background-color: blue;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 60px rgb(255, 255, 255) ;
+  border-top: 6px dotted white ;
+  border-bottom: 6px dotted white;
+  border-left: 5px dashed red;
+  border-right: 5px dashed red;
+  text-shadow: 0 0 5px white;
+}
+
+#main {
+  height: 60%;
+  /* background-color: chartreuse; */
+  padding-top: 1px;
+  background-blend-mode: overlay;
+  background:url(/assets/images/0003.jpeg) center / cover no-repeat ,  linear-gradient(45deg , rgba(0, 0, 255, 0.57) , rgba(0, 0, 0, 0.438) , rgba(255, 0, 0, 0.418) , rgba(255, 255, 0, 0.526));
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(237, 234, 234);
+  text-align: center;
+}
+
+.test{
+  width: 300px;
+  height: 150px;
+  background-color: beige;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 20px 0 0 20px;
+}
+
+
+
+
+.galleryBox{
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+}
+
+
+.imageSection1 , .imageSection2 , .imageSection3{
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  padding: 0 5px 0 5px;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+}
+
+.imageSection2 .image1{
+margin: 20px 0 20px 0;
+}
+.imageSection2 .image2{
+margin: 20px 0 20px 0;
+width: 120px;
+border-radius: 100%;
+box-shadow: 0 0 15px black;
+border: 2px solid black;
+}
+.imageSection2 .image3{
+margin: 20px 0 20px 0;
+}
+
+.paragraphSection{
+  display: inline-block;
+  width: 25%;
+  background-color: rgba(0, 255, 255, 0.6);
+  border-radius: 10px;
+  text-align: justify;
+  padding: 0 20px 0 20px;
+  vertical-align:top ;
+}
+
+.paragraphSection h1{
+  text-shadow: 0 0 10px yellow;
+}
+
+
+
+
+.registerSection{
+  width: 25%;
+  height: 500px;
+  background-color: white;
+  padding: 20px;
+  display: inline-block;
+  text-align: justify;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.registerSection h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: greenyellow;
+  background: linear-gradient(to right , #FAFF00 , #00E0FF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent ;
+}
+
+.registerSection span{
+  color: red;
+}
+
+.formSection{
+  text-align: center;
+}
+
+.formSection .halfInput{
+  text-align: justify;
+  width: 45%;
+  display: inline-block;
+}
+.formSection .lineInput{
+  text-align: justify;
+  width: 90%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+input{
+  width: 90%;
+  border: none;
+  background: linear-gradient(to right , #FF8A00 , #DBFF00);
+  height: 30px;
+  border-radius: 100px;
+  color: red;
+}
+
+.checkboxsection{
+text-align: justify;
+}
+.checkboxsection label{
+  vertical-align: super;
+  font-size: 10PX;
+}
+.checkboxsection input{
+  width: 10PX;
+  vertical-align: sub
+}
+
+button{
+  width: 50%;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #FF8A00;
+}
+
+
+
+
+
