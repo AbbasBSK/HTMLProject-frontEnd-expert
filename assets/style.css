@@ -118,10 +118,10 @@ margin: 20px 0 20px 0;
 .registerSection h1{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 30px;
-  color: greenyellow;
-  background: linear-gradient(to right , #FAFF00 , #00E0FF);
-  background-clip: text;
-  -webkit-text-fill-color: transparent ;
+  display: inline-block;
+  background: linear-gradient(to right , #FAFF00 , #00E0FF  );
+  background-clip:text ;
+  color: rgba(0, 0, 0, 0.258);
 }
 
 .registerSection span{
@@ -151,6 +151,10 @@ input{
   height: 30px;
   border-radius: 100px;
   color: red;
+}
+
+.formSection .lineInput input{
+  width: 100%;
 }
 
 .checkboxsection{
