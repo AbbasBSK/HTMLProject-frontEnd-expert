@@ -150,7 +150,6 @@ input{
   background: linear-gradient(to right , #FF8A00 , #DBFF00);
   height: 30px;
   border-radius: 100px;
-  color: red;
 }
 
 .formSection .lineInput input{
