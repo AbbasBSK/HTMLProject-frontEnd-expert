@@ -48,6 +48,8 @@
 
 body {
   font-family: yekan;
+  font-style: italic;
+  font-weight: bolder;
   height: 100vh;
   background-color: rgb(237, 234, 234);
   text-align: center;
@@ -102,6 +104,8 @@ border: 2px solid black;
 margin: 20px 0 20px 0;
 }
 
+
+
 .paragraphSection{
   display: inline-block;
   width: 25%;
@@ -115,6 +119,9 @@ margin: 20px 0 20px 0;
 .paragraphSection h1{
   text-shadow: 0 0 10px yellow;
 }
+
+
+/* استایلهای مربوط به فرم ثبت نام */
 
 
 
@@ -150,6 +157,9 @@ margin: 20px 0 20px 0;
   width: 45%;
   display: inline-block;
 }
+.formSection .halfInput input{
+  box-shadow: 0 0 10px black inset;
+}
 .formSection .lineInput{
   text-align: justify;
   width: 90%;
@@ -168,6 +178,8 @@ input{
 
 .formSection .lineInput input{
   width: 100%;
+  box-shadow: 0 0 10px black;
+
 }
 
 .checkboxsection , .radioSection{
@@ -189,6 +201,7 @@ button{
   height: 30px;
   border-radius: 100px;
   background-color: #FF8A00;
+  cursor: pointer;
   font-family: inherit;
 }
 

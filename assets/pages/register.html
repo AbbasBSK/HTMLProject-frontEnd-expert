@@ -8,28 +8,32 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 
-<body >
+<body>
+
   <section class="registerSection">
     <div class="title">
       <h1>ثبت نام</h1>
       <h5>بیایید یک <span>کاربری</span> ایجاد بکنیم </h5>
     </div>
 
-    <form  class="formSection" action="">
+    <!-- تگهای مربوط به فرم ثبت نام -->
+
+    <form class="formSection" action="/index.html">
+      <!-- فیلهای مربوط به نام و نام خانوادگی -->
       <div>
-        <div  class="halfInput">
+        <div class="halfInput">
           <label>نام</label><br>
-          <input placeholder="لطفا نام  خود را وارد کنید" type="text">
+          <input placeholder="لطفا نام  خود را وارد کنید" type="text" required>
         </div>
 
         <div class="halfInput">
           <label>نام خانوادگی</label><br>
-          <input placeholder="لطفا نام خانوادگی خود را وارد کنید" type="text" required>
+          <input placeholder="لطفا نام خانوادگی خود را وارد کنید" type="text">
         </div>
       </div>
 
 
-
+      <!-- فیلدهای مربوط به جنسیت -->
       <div class="radioSection">
         <label>جنسیت</label><br>
 
@@ -46,7 +50,7 @@
 
       <div class="lineInput">
         <label>ایمیل</label><br>
-        <input placeholder="لطفا ایمیل خود را وارد کنید" type="email" required>
+        <input placeholder="لطفا ایمیل خود را وارد کنید" type="email">
       </div>
       <div class="lineInput">
         <label>تایپ مجدد ایمیل</label><br>
@@ -66,9 +70,11 @@
       </div>
 
       <div>
-        <button type="submit">
-          <a href="/index.html">تایید</a>
-        </button>
+
+
+          <button type="submit">
+            تایید
+          </button>
         <!-- <input value="Sign Up" type="submit"> -->
       </div>
 
