@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
+
 <body>
   <section class="registerSection">
     <div class="title">
@@ -13,17 +15,35 @@
       <h5>Let’s Create Your <span>Account</span></h5>
     </div>
 
-    <form  class="formSection" action="">
+    <form class="formSection" action="">
       <div>
         <div class="halfInput">
           <label>First Name</label><br>
           <input placeholder="لطفا نام  خود را وارد کنید" type="text">
         </div>
+
         <div class="halfInput">
           <label>Last Name</label><br>
           <input placeholder="لطفا نام خانوادگی خود را وارد کنید" type="text" required>
         </div>
       </div>
+
+
+
+      <div class="radioSection">
+        <label>Gender</label><br>
+
+        <div class="radiobox">
+          <div class="checkboxsection">
+            <label>male</label>
+            <input class="checkbox" type="radio" name="Gender">
+            <label>female</label>
+            <input class="checkbox" type="radio" name="Gender">
+          </div>
+        </div>
+      </div>
+
+
       <div class="lineInput">
         <label>Email</label><br>
         <input placeholder="لطفا ایمیل خود را وارد کنید" type="email" required>
@@ -41,7 +61,7 @@
         <input type="password">
       </div>
       <div class="checkboxsection">
-        <input class="checkbox" type="checkbox" >
+        <input class="checkbox" type="checkbox">
         <label>I Agree To The Terms & Condition</label><br>
       </div>
 
@@ -50,41 +70,11 @@
         <!-- <input value="Sign Up" type="submit"> -->
       </div>
 
-      <!-- <style>
-
-        .hero{
-          background: url(/assets/images/0003.jpeg);
-          background-size: cover;
-          object-fit: cover;
-          width: 300px;
-          height: 220px;
-          position: relative;
-        }
-
-        .hero::after{
-          content: "";
-          background-color: rgba(0, 0, 0, 0.7);
-          width: 100%;
-          height: 100%;
-          display: block;
-          position: absolute;
-          top: 0;
-        }
- -->
-       
-       
-
-
-       <!-- </style>
-
-      <div class="hero" >
-       
-      </div> -->
-
 
 
     </form>
   </section>
-  
+
 </body>
+
 </html>

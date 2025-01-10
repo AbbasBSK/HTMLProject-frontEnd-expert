@@ -106,7 +106,6 @@ margin: 20px 0 20px 0;
 
 .registerSection{
   width: 25%;
-  height: 500px;
   background-color: white;
   padding: 20px;
   display: inline-block;
@@ -156,8 +155,10 @@ input{
   width: 100%;
 }
 
-.checkboxsection{
+.checkboxsection , .radioSection{
 text-align: justify;
+padding-left: 20px;
+margin-top: 10px;
 }
 .checkboxsection label{
   vertical-align: super;
