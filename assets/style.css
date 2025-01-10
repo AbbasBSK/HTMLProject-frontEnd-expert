@@ -1,3 +1,16 @@
+@font-face {
+  font-family: yekan;
+  src: url('/assets/font/persianFont/yekan-font/yekan-regular.woff');
+  src: url('/assets/font/persianFont/yekan-font/yekan-regular.ttf');
+}
+@font-face {
+  font-family: vazir;
+  src: url('/assets/font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff');
+  src: url('/assets/font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff2');
+
+}
+
+
 .headerWeb {
   /* background-color: aqua; */
   height: 20%;
@@ -34,9 +47,11 @@
 }
 
 body {
+  font-family: yekan;
   height: 100vh;
   background-color: rgb(237, 234, 234);
   text-align: center;
+  direction: rtl;
 }
 
 .test{
@@ -105,7 +120,7 @@ margin: 20px 0 20px 0;
 
 
 .registerSection{
-  width: 25%;
+  width: 30%;
   background-color: white;
   padding: 20px;
   display: inline-block;
@@ -115,7 +130,6 @@ margin: 20px 0 20px 0;
 }
 
 .registerSection h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 30px;
   display: inline-block;
   background: linear-gradient(to right , #FAFF00 , #00E0FF  );
@@ -149,6 +163,7 @@ input{
   background: linear-gradient(to right , #FF8A00 , #DBFF00);
   height: 30px;
   border-radius: 100px;
+  font-family: inherit;
 }
 
 .formSection .lineInput input{
@@ -157,7 +172,7 @@ input{
 
 .checkboxsection , .radioSection{
 text-align: justify;
-padding-left: 20px;
+padding-right: 20px;
 margin-top: 10px;
 }
 .checkboxsection label{
@@ -174,6 +189,7 @@ button{
   height: 30px;
   border-radius: 100px;
   background-color: #FF8A00;
+  font-family: inherit;
 }
 
 
