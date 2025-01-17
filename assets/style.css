@@ -56,6 +56,14 @@ body {
   direction: rtl;
 }
 
+a{
+  text-decoration: dashed;
+  text-decoration-line: overline;
+  text-decoration-color: red ;
+  color: white;
+}
+
+
 .test{
   width: 300px;
   height: 150px;
@@ -142,6 +150,7 @@ margin: 20px 0 20px 0;
   background: linear-gradient(to right , #FAFF00 , #00E0FF  );
   background-clip:text ;
   color: rgba(0, 0, 0, 0.258);
+  
 }
 
 .registerSection span{
@@ -203,7 +212,18 @@ button{
   background-color: #FF8A00;
   cursor: pointer;
   font-family: inherit;
+  transition-property: all;
+  transition-duration: 1s;
 }
+button:hover{
+  box-shadow: 0 0 10px black;
+}
+button:focus{
+  box-shadow: 0 0 10px black inset;
+  background-color: #DBFF00;
+}
+
+
 
 
 
