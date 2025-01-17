@@ -1,21 +1,19 @@
 @font-face {
   font-family: yekan;
-  src: url('/assets/font/persianFont/yekan-font/yekan-regular.woff');
-  src: url('/assets/font/persianFont/yekan-font/yekan-regular.ttf');
+  src: url("/assets/font/persianFont/yekan-font/yekan-regular.woff");
+  src: url("/assets/font/persianFont/yekan-font/yekan-regular.ttf");
 }
 @font-face {
   font-family: vazir;
-  src: url('/assets/font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff');
-  src: url('/assets/font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff2');
-
+  src: url("/assets/font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff");
+  src: url("/assets/font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff2");
 }
-
 
 .headerWeb {
   /* background-color: aqua; */
   height: 20%;
   text-align: center;
-  background: linear-gradient(to right , aqua , black);
+  background: linear-gradient(to right, aqua, black);
 }
 
 .headerWeb .title {
@@ -24,13 +22,13 @@
   text-align: center;
   width: 200px;
   height: 100px;
-  line-height:5 ;
+  line-height: 5;
   background-color: blue;
   display: inline-block;
   margin-top: 20px;
   border-radius: 20px;
-  box-shadow: 0 0 60px rgb(255, 255, 255) ;
-  border-top: 6px dotted white ;
+  box-shadow: 0 0 60px rgb(255, 255, 255);
+  border-top: 6px dotted white;
   border-bottom: 6px dotted white;
   border-left: 5px dashed red;
   border-right: 5px dashed red;
@@ -42,7 +40,14 @@
   /* background-color: chartreuse; */
   padding-top: 1px;
   background-blend-mode: overlay;
-  background:url(/assets/images/0003.jpeg) center / cover no-repeat ,  linear-gradient(45deg , rgba(0, 0, 255, 0.57) , rgba(0, 0, 0, 0.438) , rgba(255, 0, 0, 0.418) , rgba(255, 255, 0, 0.526));
+  background: url(/assets/images/0003.jpeg) center / cover no-repeat,
+    linear-gradient(
+      45deg,
+      rgba(0, 0, 255, 0.57),
+      rgba(0, 0, 0, 0.438),
+      rgba(255, 0, 0, 0.418),
+      rgba(255, 255, 0, 0.526)
+    );
   text-align: center;
 }
 
@@ -56,15 +61,14 @@ body {
   direction: rtl;
 }
 
-a{
+a {
   text-decoration: dashed;
   text-decoration-line: overline;
-  text-decoration-color: red ;
+  text-decoration-color: red;
   color: white;
 }
 
-
-.test{
+.test {
   width: 300px;
   height: 150px;
   background-color: beige;
@@ -73,68 +77,60 @@ a{
   padding: 20px 0 0 20px;
 }
 
-
-
-
-.galleryBox{
+.galleryBox {
   width: 600px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.6);
   display: inline-block;
 }
 
-
-.imageSection1 , .imageSection2 , .imageSection3{
+.imageSection1,
+.imageSection2,
+.imageSection3 {
   width: 30%;
   height: 100%;
   display: inline-block;
   padding: 0 5px 0 5px;
 }
 
-img{
+img {
   width: 100%;
   object-fit: cover;
   margin: 10px 0 10px 0;
   border-radius: 5px;
 }
 
-.imageSection2 .image1{
-margin: 20px 0 20px 0;
+.imageSection2 .image1 {
+  margin: 20px 0 20px 0;
 }
-.imageSection2 .image2{
-margin: 20px 0 20px 0;
-width: 120px;
-border-radius: 100%;
-box-shadow: 0 0 15px black;
-border: 2px solid black;
+.imageSection2 .image2 {
+  margin: 20px 0 20px 0;
+  width: 120px;
+  border-radius: 100%;
+  box-shadow: 0 0 15px black;
+  border: 2px solid black;
 }
-.imageSection2 .image3{
-margin: 20px 0 20px 0;
+.imageSection2 .image3 {
+  margin: 20px 0 20px 0;
 }
 
-
-
-.paragraphSection{
+.paragraphSection {
   display: inline-block;
   width: 25%;
   background-color: rgba(0, 255, 255, 0.6);
   border-radius: 10px;
   text-align: justify;
   padding: 0 20px 0 20px;
-  vertical-align:top ;
+  vertical-align: top;
 }
 
-.paragraphSection h1{
+.paragraphSection h1 {
   text-shadow: 0 0 10px yellow;
 }
 
-
 /* استایلهای مربوط به فرم ثبت نام */
 
-
-
-
-.registerSection{
+.registerSection {
   width: 30%;
   background-color: white;
   padding: 20px;
@@ -144,101 +140,91 @@ margin: 20px 0 20px 0;
   border-radius: 15px;
 }
 
-.registerSection h1{
+.registerSection h1 {
   font-size: 30px;
   display: inline-block;
-  background: linear-gradient(to right , #FAFF00 , #00E0FF  );
-  background-clip:text ;
+  background: linear-gradient(to right, #faff00, #00e0ff);
+  background-clip: text;
   color: rgba(0, 0, 0, 0.258);
-  
 }
 
-.registerSection span{
+.registerSection span {
   color: red;
 }
 
-.formSection{
+.formSection {
   text-align: center;
 }
 
-.formSection .halfInput{
+.formSection .halfInput {
   text-align: justify;
   width: 45%;
   display: inline-block;
 }
-.formSection .halfInput input{
+.formSection .halfInput input {
   box-shadow: 0 0 10px black inset;
 }
-.formSection .lineInput{
+.formSection .lineInput {
   text-align: justify;
   width: 90%;
   display: inline-block;
   margin-top: 10px;
 }
 
-input{
+input {
   width: 90%;
   border: none;
-  background: linear-gradient(to right , #FF8A00 , #DBFF00);
+  background: linear-gradient(to right, #ff8a00, #dbff00);
   height: 30px;
   border-radius: 100px;
   font-family: inherit;
 }
 
-.formSection .lineInput input{
+.formSection .lineInput input {
   width: 100%;
   box-shadow: 0 0 10px black;
-
 }
 
-.checkboxsection , .radioSection{
-text-align: justify;
-padding-right: 20px;
-margin-top: 10px;
+.checkboxsection,
+.radioSection {
+  text-align: justify;
+  padding-right: 20px;
+  margin-top: 10px;
 }
-.checkboxsection label{
+.checkboxsection label {
   vertical-align: super;
-  font-size: 10PX;
+  font-size: 10px;
 }
-.checkboxsection input{
-  width: 10PX;
-  vertical-align: sub
+.checkboxsection input {
+  width: 10px;
+  vertical-align: sub;
 }
 
-button{
+button {
   width: 50%;
   height: 30px;
   border-radius: 100px;
-  background-color: #FF8A00;
+  background-color: #ff8a00;
   cursor: pointer;
   font-family: inherit;
   transition-property: all;
   transition-duration: 1s;
 }
-button:hover{
+button:hover {
   box-shadow: 0 0 10px black;
 }
-button:focus{
+button:focus {
   box-shadow: 0 0 10px black inset;
-  background-color: #DBFF00;
+  background-color: #dbff00;
 }
 
-
-
-
-@media (max-width : 413px) {
-
-  .registerSection{
+@media (max-width: 413px) {
+  .registerSection {
     width: 100%;
     padding: 20px 0 20px 0;
   }
 
-  .title{
+  .title {
     padding-right: 20px;
   }
-  
 }
-
-
-
-
