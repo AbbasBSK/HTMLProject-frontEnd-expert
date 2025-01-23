@@ -1,0 +1,34 @@
+ul{
+  list-style: none;
+  padding: 0;
+  word-spacing: -4px;
+}
+.listSection{
+}
+
+.listItemBase{
+  margin-top: 5px;
+  border: 1px solid;
+  height: 70px;
+}
+
+.internalList{
+  height: 100%;
+}
+
+.internalList .listItemInternal{
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  }
+
+  .boxShadow{
+    box-shadow:10px 0 15px gray ;
+  }
+
+  .star{
+    color: rgb(255, 119, 0);
+    font-size: 20px;
+  }
+
