@@ -232,12 +232,9 @@ button:focus {
 
   /* index page */
 
-  body{
-    height: auto;
-  }
 
   #main{
-    height: auto !important;
+    height: auto ;
     background: linear-gradient(to top , white , aqua) , url() !important;
   }
 
