@@ -13,7 +13,12 @@
   /* background-color: aqua; */
   height: 20%;
   text-align: center;
-  background: linear-gradient(to right, aqua, black);
+  background:  radial-gradient(
+    circle 900px,
+    rgba(0, 0, 255, 0.57),
+    rgba(0, 0, 0, 0.438),
+    rgba(255, 0, 0, 0.418),
+    rgba(0, 0, 0, 0.526));
 }
 
 .headerWeb .title {
