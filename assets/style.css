@@ -186,6 +186,10 @@ input {
   font-family: inherit;
 }
 
+.lineInput input::placeholder{
+  color: red;
+}
+
 .formSection .lineInput input {
   width: 100%;
   box-shadow: 0 0 10px black;
@@ -202,8 +206,8 @@ input {
   font-size: 10px;
 }
 .checkboxsection input {
-  width: 10px;
-  vertical-align: sub;
+  width: 10px !important;
+  vertical-align: sub !important;
 }
 
 button {
