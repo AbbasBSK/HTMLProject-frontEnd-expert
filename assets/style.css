@@ -59,13 +59,13 @@
 
 body {
   font-family: yekan;
-  font-style: italic;
+  font-style: oblique;
   font-weight: bolder;
   height: 100vh;
   background-color: rgb(237, 234, 234);
   text-align: center;
   direction: rtl;
-}
+  }
 
 a {
   text-decoration: dashed;
