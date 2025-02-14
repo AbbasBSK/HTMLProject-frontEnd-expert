@@ -1,30 +1,20 @@
 /* Reset Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Vazir', sans-serif; /* استفاده از فونت فارسی */
     background-color: #f9f9f9;
     color: #333;
-    display: flex; /* صفحه خود را یک Flex Container در نظر بگیرید */
-    justify-content: center; /* محتوای صفحه در مرکز قرار می‌گیرد */
-    align-items: center; /* محتوای صفحه عموداً مرکز می‌شود */
-    min-height: 100vh; /* صفحه تمام ارتفاع صفحه نمایش را پوشش می‌دهد */
+    height: 100vh; /* صفحه تمام ارتفاع صفحه نمایش را پوشش می‌دهد */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    display: flex; /* این کانتینر یک Flex Container است */
-    flex-direction: row; /* چیدمان افقی */
-    justify-content: space-between; /* فاصله بین بکس‌ها */
-    align-items: center; /* چیدمان عمودی بکس‌ها */
-    gap: 20px; /* فاصله بین بکس‌ها */
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #c1c0c0;
     border-radius: 8px;
-    max-width: 800px; /* عرض حداکثر کانتینر */
+    width: 50%; /* عرض حداکثر کانتینر */
+    display: flex;
+    justify-content: space-around;
 }
 
 .box {
@@ -32,10 +22,10 @@ body {
     height: 100px; /* ارتفاع بکس‌ها */
     background-color: #2ecc71; /* رنگ پس زمینه بکس‌ها */
     color: white;
-    display: flex; /* هر بکس یک Flex Container است */
-    justify-content: center; /* متن در مرکز بکس قرار می‌گیرد */
-    align-items: center; /* متن عموداً مرکز می‌شود */
     font-size: 20px;
     font-weight: bold;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
