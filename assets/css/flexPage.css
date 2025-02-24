@@ -17,10 +17,9 @@
 }
 
 body {
-  font-family: "vazir"; /* استفاده از فونت فارسی */
+  font-family: "vazir"; 
   background-color: #f9f9f9;
   color: #333;
-  line-height: 1.6;
 }
 
 .app-container {
@@ -32,8 +31,9 @@ body {
 /* Header Styling */
 .header {
   display: flex;
-  justify-content: space-between; /* فاصله بین لوگو و منو */
-  align-items: center; /* چیدمان عمودی محتوای هدر */
+  justify-content: space-between; 
+  align-items: center; 
+
   background-color: #2c3e50;
   color: white;
   padding: 15px 20px;
@@ -45,10 +45,10 @@ body {
   font-size: 24px;
   font-weight: bold;
   background-color: white;
+  border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
 }
 .logo img {
   width: 3rem;
@@ -56,51 +56,58 @@ body {
 
 .menu ul {
   list-style: none;
+  background-color: cadetblue;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
   display: flex;
-  gap: 20px; /* فاصله بین آیتم‌های منو */
+  gap: 20px;
 }
 
 .menu a {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  transition: all 0.5s;
+  display:inline-block ;
 }
 
 .menu a:hover {
-  color: #ecf0f1; /* تغییر رنگ هنگام هاور */
+  color: #0073ff;
+  transform:rotateY(360deg);
+
 }
 
 /* Main Content Styling */
 .main-content {
-  flex: 1; /* این بخش تمام فضا را که باقی مانده است، پوشش می‌دهد */
   padding: 20px;
   text-align: center;
   background-color: #d3fddf;
+  flex: 1;
 }
 
 .product-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* اجازه دادن به کارت‌ها برای به خط بعدی انتقال پیدا کنند */
-  gap: 20px; /* فاصله بین کارت‌ها */
-  justify-content: center; /* کارت‌ها در مرکز قرار می‌گیرند */
   padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .product-card {
-  flex: 1  ; /* هر کارت یک چهارم عرض صفحه باشد */
   background-color: #ffffff;
   border: 1px solid #949292;
   border-radius: 8px;
   padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  width: 22%;
+  transition: all 0.3s ;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 .product-card:hover {
-  transform: scale(1.05); /* افزایش اندازه کارت هنگام هاور */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
 .product-image {
@@ -118,11 +125,11 @@ body {
 
 .product-price {
   font-size: 16px;
-  color: #e74c3c; /* رنگ قرمز برای قیمت */
+  color: #e74c3c; 
 }
 
 .buy-button {
-  background-color: #2ecc71; /* رنگ سبز برای دکمه خرید */
+  background-color: #2ecc71; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -130,31 +137,36 @@ body {
   cursor: pointer;
   font-size: 14px;
   font-family: inherit;
+  transition: all 0.5s;
 }
 
 .buy-button:hover {
-  background-color: #27ae60; /* تیره‌تر شدن رنگ هنگام هاور */
+  background-color: #27ae60;
+  transform: translate(20px , 20px);
 }
 
 /* Footer Styling */
 .footer {
-  display: flex;
-  justify-content: center; /* متن فوتر در مرکز قرار می‌گیرد */
-  align-items: center; /* چیدمان عمودی متن فوتر */
   background-color: #2c3e50;
   color: white;
   padding: 15px 0;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Responsive Design */
 
 @media (max-width: 768px) {
-  .main-content {
-    padding: 0;
-  }
 
+  .product-cards-container{
+    flex-direction: column;
+  }
   .product-card {
     width: 100%;
+  }
+
+  .menu{
+    display: none;
   }
 }

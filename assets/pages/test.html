@@ -3,16 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آموزش Flexbox</title>
-    <link rel="stylesheet" href="/assets/css/test.css">
+    <title>فرم ورود سه‌بعدی</title>
+    <style>
+        body {
+            background: #e0e7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background: #f1f5ff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px #ffffff;
+            text-align: center;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 30px;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px #ffffff;
+            outline: none;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(145deg, #4e9ffd, #4285f4);
+            color: #fff;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px #ffffff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form-container button:hover {
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px #ffffff;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
+    <div class="form-container">
+        <h2>فرم ورود</h2>
+        <input type="text" placeholder="ایمیل">
+        <input type="password" placeholder="رمز عبور">
+        <button>ورود</button>
     </div>
 </body>
 </html>
