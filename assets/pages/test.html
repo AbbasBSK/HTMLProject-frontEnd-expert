@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>فرم ورود سه‌بعدی</title>
+    <link rel="stylesheet" href="/assets/css/test.css">
     <style>
-        body {
-            background: #e0e7ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
 
-        .form-container {
-            background: #f1f5ff;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px #ffffff;
-            text-align: center;
-        }
+      body {
+        background: #e0e7ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
 
-        .form-container input[type="text"],
-        .form-container input[type="password"] {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 30px;
-            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px #ffffff;
-            outline: none;
-        }
+      .form-container {
+        background: #f1f5ff;
+        padding: 30px;
+        border-radius: 40px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+          -10px -10px 15px #f9f9f9fe;
+        text-align: center;
+        /* border: 3px solid rgba(0, 0, 0, 0.02); */
+      }
 
-        .form-container button {
-            width: 100%;
-            padding: 15px;
-            border: none;
-            border-radius: 30px;
-            background: linear-gradient(145deg, #4e9ffd, #4285f4);
-            color: #fff;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px #ffffff;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+      .form-container input[type="text"],
+      .form-container input[type="password"] {
+        max-width: 100%;
+        min-width: 70%;
+        padding: 15px;
+        margin: 10px 0;
+        border: none;
+        /* border: 3px solid rgba(0, 0, 0, 0.049); */
+        border-radius: 30px;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.15),
+          inset -5px -5px 10px #f5f4f45d;
+        outline: none;
+      }
 
-        .form-container button:hover {
-            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px #ffffff;
-        }
+      .form-container button {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(145deg, #4e9ffd, #4285f4);
+        color: #fff;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px #d6d5d5;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .form-container button:hover {
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 10px #ffffff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="form-container">
-        <h2>فرم ورود</h2>
-        <input type="text" placeholder="ایمیل">
-        <input type="password" placeholder="رمز عبور">
-        <button>ورود</button>
+      <h2>فرم ورود</h2>
+      <input type="text" placeholder="ایمیل" />
+      <input type="password" placeholder="رمز عبور" />
+      <button>ورود</button>
     </div>
-</body>
+  </body>
 </html>

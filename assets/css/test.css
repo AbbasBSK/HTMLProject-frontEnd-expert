@@ -1,48 +1,25 @@
+ @font-face {
+  font-family: yekan;
+  src: url("/assets/font/persianFont/yekan-font/yekan-regular.woff");
+  src: url("/assets/font/persianFont/yekan-font/yekan-regular.ttf");
+}
+@font-face {
+  font-family: vazir;
+  src: url("/assets/font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff");
+  src: url("/assets/font/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff2");
+}
+
+/* Reset Styles */
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  font-family: "vazir" !important; 
 }
 
-.input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+input{
+    font-family: inherit;
 }
 
-input {
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-input:focus {
-    border-color: #007BFF;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translate(-2px, -2px);
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007BFF;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-    background-color: #0056b3;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translate(-2px, -2px);
+button{
+    font-family: inherit;
+    margin-top: 1rem;
 }
