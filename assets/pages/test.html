@@ -3,68 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>فرم ورود سه‌بعدی</title>
-    <link rel="stylesheet" href="/assets/css/test.css">
-    <style>
-
-      body {
-        background: #e0e7ff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      .form-container {
-        background: #ebf1ff;
-        padding: 30px;
-        border-radius: 40px;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
-          -10px -10px 15px #f9f9f9fe;
-        text-align: center;
-        /* border: 3px solid rgba(0, 0, 0, 0.02); */
-      }
-
-      .form-container input[type="text"],
-      .form-container input[type="password"] {
-        max-width: 100%;
-        min-width: 70%;
-        padding: 15px;
-        margin: 10px 0;
-        border: none;
-        /* border: 3px solid rgba(0, 0, 0, 0.049); */
-        border-radius: 30px;
-        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.15),
-          inset -5px -5px 10px #f5f4f45d;
-        outline: none;
-      }
-
-      .form-container button {
-        width: 100%;
-        padding: 15px;
-        border: none;
-        border-radius: 30px;
-        background: linear-gradient(145deg, #4e9ffd, #4285f4);
-        color: #fff;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px #cdcccc;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-
-      .form-container button:hover {
-        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
-          inset -5px -5px 10px #dcdbdb4e;
-      }
-    </style>
+    <link rel="stylesheet" href="/assets/css/test.css" />
+    <title>آموزش Position در CSS</title>
   </head>
-  <body>
-    <div class="form-container">
-      <h2>فرم ورود</h2>
-      <input type="text" placeholder="ایمیل" />
-      <input type="password" placeholder="رمز عبور" />
-      <button>ورود</button>
+  <body dir="rtl">
+    <div id="staticBox" class="static-box">این المان با position: static است (پیش‌فرض).</div>
+
+    <div class="relative-box">
+      این المان با position: relative است و 20px از موقعیت اصلی جابه‌جا شده است.
+    </div>
+
+    <div class="absolute-box">
+      این المان با position: absolute است و نسبت به نزدیکترین والد relative
+      موقعیت‌گیری شده است.
+    </div>
+
+    <div class="fixed-box">
+        <a href="#staticBox">
+            کلیک
+        </a>
+    </div>
+
+    <div class="sticky-box">
+      این المان با position: sticky است و هنگام اسکرول به بالا می‌چسبد.
+    </div>
+
+    <div class="spacer">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
+      nam ab cupiditate ratione porro recusandae provident aspernatur! Doloribus
+      quod alias magni! Aperiam blanditiis molestias natus itaque! Ad quas alias
+      provident. Ea voluptatibus nulla natus similique, culpa eaque qui atque
+      veritatis, error sed consectetur quisquam praesentium? Quasi assumenda,
+      modi quidem maiores voluptate repellendus sunt asperiores excepturi
+      labore, molestiae similique soluta odio esse suscipit aliquid fuga
+      laboriosam itaque ratione recusandae nobis officiis? Totam soluta cum
+      consequatur alias saepe maiores quibusdam iste perferendis obcaecati,
+      asperiores non exercitationem adipisci accusamus consequuntur eum sunt
+      officia dolore! Nisi ipsam dignissimos, voluptatem earum labore hic
+      voluptates omnis quae consequuntur iure voluptas sint aperiam quo.
+      Dolorum, enim. Saepe quis commodi nisi quibusdam, vero blanditiis
+      accusantium, nobis possimus sint reiciendis doloremque ex praesentium
+      quod, tempore tempora laudantium repudiandae atque tenetur sit corrupti
+      illo. Sunt repellendus molestiae iure accusantium est harum necessitatibus
+      commodi, alias itaque officiis ullam molestias soluta quas illum! Ducimus
+      dolorem eius magni dolor quis earum numquam alias nostrum eum!
+      Repudiandae, exercitationem beatae esse, est error officiis libero
+      inventore vero ab ea ad, ipsam corrupti excepturi ullam aspernatur ex
+      facere? Ex vero vel nulla qui dolore. Dolorem dolorum nemo reprehenderit
+      similique obcaecati pariatur! Itaque ullam fugiat ratione animi incidunt
+      ut soluta quis facilis alias. Excepturi doloribus, debitis accusantium
+      dolorem corporis incidunt unde provident quidem assumenda tempore! Sed
+      suscipit pariatur inventore quia dolores possimus corrupti ad iusto!
+      Beatae incidunt ad ut exercitationem fugiat tenetur ullam voluptates
+      officia mollitia quisquam commodi recusandae excepturi, aliquid quidem
+      earum ipsa ea! Provident eaque assumenda minus, omnis maxime recusandae
+      dolor sit sint voluptas exercitationem aperiam deserunt rerum, perferendis
+      sequi, aliquid debitis autem ratione dicta nulla possimus tempora quae
+      iusto aliquam culpa. Totam unde, minima voluptatem quisquam placeat fugit
+      ducimus architecto voluptate ex recusandae! Possimus eaque nobis quam
+      dolor expedita quaerat quod deserunt id, iusto, deleniti rerum aliquam
+      veniam aliquid fuga eligendi velit reprehenderit minus nemo omnis
+      laudantium corporis. Reprehenderit dolor alias, incidunt facere tenetur
+      dolorem inventore magnam placeat, repellat necessitatibus ducimus culpa
+      nulla architecto deleniti! Veritatis quisquam qui aut dolore quasi,
+      deleniti quod blanditiis. Necessitatibus incidunt, error eaque saepe ea
+      aut modi dolores officia maxime nisi nobis doloribus ipsum ipsam assumenda
+      provident voluptate quos ipsa a, in quidem dignissimos unde eos. Doloribus
+      aspernatur mollitia cumque repellendus officiis recusandae eveniet numquam
+      at, labore aperiam rem vel ab eligendi enim quae placeat vero nobis? In
+      exercitationem nam voluptatibus consequuntur sit incidunt quo quaerat
+      ipsam praesentium labore repudiandae fugiat ipsum rem aliquid quod error
+      laboriosam officiis expedita repellat, corrupti, odio harum laudantium
+      saepe modi? Facilis laboriosam totam maiores assumenda earum modi ex
+      maxime hic perferendis tenetur, at corrupti esse enim et. Et facilis
+      obcaecati quasi quis sed illum provident beatae distinctio suscipit
+      debitis repudiandae repellat, numquam praesentium, minus corporis alias!
+      Vero ea fuga reprehenderit! Deserunt sint, libero minima molestiae
+      quibusdam mollitia recusandae temporibus aliquam impedit! Consequuntur,
+      quod nostrum tempore, corporis sunt commodi repellat libero totam hic
+      doloremque voluptatum autem! Quidem amet aspernatur dignissimos
+      praesentium quod nihil saepe totam ad. Veniam modi consequuntur quaerat
+      eius suscipit, labore harum dicta voluptas dolor ad non a quo impedit ut
+      veritatis accusantium illum repellendus laboriosam recusandae ducimus
+      earum corporis quas assumenda? Rerum necessitatibus quidem quis tempora
+      ipsum atque explicabo veniam vel totam aut libero, quaerat hic ullam minus
+      natus aperiam corrupti dolore. Molestias tempore quaerat deserunt
+      voluptate qui excepturi, error mollitia reprehenderit, ducimus voluptates
+      corrupti iusto eveniet odio temporibus iure ut atque hic porro repudiandae
+      enim tenetur accusamus quod dolore. Ut ea ab repellendus atque vel, sint
+      non nostrum. Alias iusto amet rem fugiat ipsam incidunt deserunt! Ipsa,
+      voluptatem corporis cupiditate animi dolores distinctio commodi dicta
+      possimus officiis exercitationem nisi dignissimos corrupti incidunt illo
+      sed velit architecto eligendi officia voluptas? Repellat, recusandae
+      cumque commodi placeat delectus ipsa exercitationem voluptatum similique
+      quia dolore consequatur dignissimos soluta possimus molestias illo. Quasi
+      neque voluptas optio totam explicabo ut doloribus error obcaecati rerum
+      quod laborum ab, eligendi dignissimos minus molestiae harum quidem esse
+      odit delectus minima animi, illo ipsa tempora architecto. Corrupti, soluta
+      alias. Laboriosam odit, aperiam maxime sed illo esse, perferendis enim
+      alias saepe, ab vitae. Nesciunt, officiis. Quod ratione sint aperiam porro
+      cupiditate tempore sed aut explicabo deleniti aliquam fuga nam eligendi
+      sequi alias eos facere ipsam, ad dignissimos, laudantium voluptas
+      distinctio quae dicta? Doloremque dolorum molestiae eaque culpa et illo
+      maxime doloribus, reprehenderit magni quis fugit sint quas nostrum enim
+      tempora eligendi molestias at libero pariatur quod nulla ut in dolor!
+      Minima quaerat voluptate, iure dolorum est ipsa quibusdam fugiat!
+      Similique ex amet ducimus illo. In iure cumque vitae quod quis omnis optio
+      quisquam. Facilis veritatis ratione rerum debitis esse. Et ea dolor
+      aperiam totam iure? Modi cum fugiat magni, neque at, voluptates
+      repudiandae corporis nesciunt, veritatis culpa fugit! Totam excepturi
+      dolorum earum asperiores sed. Odit commodi earum neque alias repellat at
+      voluptatum? Obcaecati illum earum beatae delectus reprehenderit animi!
+      Quaerat laboriosam iure eum voluptates laborum dolores, labore saepe
+      libero aliquid officia voluptate dolorem delectus. Blanditiis quaerat
+      harum earum quos omnis eos ratione iure ipsum nulla expedita cumque quas
+      nemo sint molestias corrupti asperiores atque facilis, inventore
+      perferendis aliquid! Quibusdam magnam iusto laboriosam possimus amet ipsam
+      facilis! Minus est cumque nemo quisquam vel perspiciatis culpa earum ea,
+      quaerat hic beatae dignissimos cupiditate iure omnis eos totam praesentium
+      rerum exercitationem quibusdam corrupti eligendi explicabo rem voluptas
+      similique. At distinctio beatae corrupti id eligendi ut tempora debitis
+      voluptate, perferendis modi repellendus ex voluptas eveniet porro nisi
+      vitae vel odio! Tenetur dolorum quo quod hic corrupti, optio itaque
+      laboriosam repellat temporibus accusamus dolore ad alias quaerat esse
+      aliquam molestiae, labore laborum deleniti illum cumque. Illo assumenda
+      omnis fuga! Velit at similique maiores ducimus, esse commodi ex, numquam
+      id, tenetur voluptatum tempore non! Ducimus ratione voluptatibus officia
+      cumque facere. Dolores, odio facilis ea labore tempora libero praesentium
+      amet a obcaecati officiis fugit esse autem sunt delectus dolor. Facere,
+      sunt. Recusandae natus, error maxime enim corrupti ut perspiciatis ipsum
+      pariatur aliquam assumenda porro maiores, culpa omnis est odit quas ipsam
+      ab minima illum vero sequi quasi reiciendis eligendi facere! Deleniti
+      eveniet modi reiciendis error nulla quae!
     </div>
   </body>
 </html>
