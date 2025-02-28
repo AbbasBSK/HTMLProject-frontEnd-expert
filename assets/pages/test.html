@@ -3,138 +3,193 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>کافه باریستا</title>
     <link rel="stylesheet" href="/assets/css/test.css" />
-    <title>آموزش Position در CSS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body dir="rtl">
-    <div id="staticBox" class="static-box">این المان با position: static است (پیش‌فرض).</div>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">نام فروشگاه</div>
+        <ul class="nav-links">
+          <li><a href="#">خانه</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">نظرات</a></li>
+          <li><a href="#">ارتباط</a></li>
+          <li><a href="#" class="reservation-btn">رزرو</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1>نام فروشگاه</h1>
+        <p>مکانی برای لذت بردن </p>
+        <div class="header-buttons">
+          <a href="#" class="btn">داستان ما</a>
+          <a href="#" class="btn primary">مشاهده بیشتر</a>
+        </div>
+      </div>
+    </header>
 
-    <div class="relative-box">
-      این المان با position: relative است و 20px از موقعیت اصلی جابه‌جا شده است.
-    </div>
+    <section class="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="/assets/images/09.jpg" alt="کافه باریستا" />
+          <div class="image-overlay">
+            <p>ما از سال ۲۰۰۹ شروع کردیم.<br />بهترین کافه در کلنگ.</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="subtitle">shop.co</span>
+          <h2>کافه کل</h2>
+          <p>
+            این کافه از سال‌ها پیش در این شهر بوده و تبدیل به یکی از محبوب‌ترین
+            مکان‌ها بین مردم محلی شده است. این کافه توسط زوجی صمیمی و
+            مهمان‌نواز، آقای و خانم جانسون اداره می‌شود. باریستا کافه توسط قالب
+            رایگان Bootstrap 5 HTML از Tooplate طراحی شده است.
+          </p>
+          <a href="#" class="btn">آشنایی با بارستاها</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="absolute-box">
-      این المان با position: absolute است و نسبت به نزدیکترین والد relative
-      موقعیت‌گیری شده است.
-    </div>
+    <section class="team">
+      <h2>آشنایی با تیم ما</h2>
+      <div class="team-members">
+        <div class="member">
+          <img src="/assets/images/0003.jpeg" alt="عضو تیم" />
+          <h3>استیو</h3>
+          <p>بارستا حرفه‌ای</p>
+        </div>
+        <div class="member">
+          <img src="/assets/images/0003.jpeg" alt="عضو تیم" />
+          <h3>ساندرا</h3>
+          <p>بارستا متخصص</p>
+        </div>
+        <div class="member">
+          <img src="/assets/images/0003.jpeg" alt="عضو تیم" />
+          <h3>جکسون</h3>
+          <p>سینیور بارستا</p>
+        </div>
+        <div class="member">
+          <img src="/assets/images/0003.jpeg" alt="عضو تیم" />
+          <h3>میشل</h3>
+          <p>دستیار بارستا</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="fixed-box">
-        <a href="#staticBox">
-            کلیک
-        </a>
-    </div>
+    <section class="testimonials">
+      <h2>نظرات مشتریان</h2>
+      <div class="testimonials-content">
+        <div class="testimonial">
+          <p>این کافه بهترین قهوه‌ها را دارد. حتماً امتحان کنید!</p>
+          <h3>سارا</h3>
+        </div>
+        <div class="testimonial">
+          <p>محیطی دنج و آرام. من همیشه اینجا مطالعه می‌کنم.</p>
+          <h3>رضا</h3>
+        </div>
+      </div>
+    </section>
 
-    <div class="sticky-box">
-      این المان با position: sticky است و هنگام اسکرول به بالا می‌چسبد.
-    </div>
+    <section class="menu">
+      <h2>منوی ما</h2>
+      <div class="menu-items">
+        <div class="menu-category">
+          <h3>Delicious Menu</h3>
+          <h4>Breakfast</h4>
+          <ul>
+            <li>
+              <span>پنکیک</span>
+              <span class="price">۱۲.۵۰ تومان</span>
+            </li>
+            <li>
+              <span>وافل تست شده</span>
+              <span class="discounted-price">۱۵.۵۰ تومان</span>
+              <span class="price">۱۲.۰۰ تومان</span>
+            </li>
+            <li>
+              <span>چیپس سرخ‌کرده</span>
+              <span class="recommend">پیشنهاد ویژه</span>
+              <span class="price">۱۵.۰۰ تومان</span>
+            </li>
+            <li>
+              <span>کیک موز</span>
+              <span class="price">۱۸.۰۰ تومان</span>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-category">
+          <h3>Favourite Menu</h3>
+          <h4>Coffee</h4>
+          <ul>
+            <li>
+              <span>لاته</span>
+              <span class="discounted-price">۱۲.۵۰ تومان</span>
+              <span class="price">۷.۵۰ تومان</span>
+            </li>
+            <li>
+              <span>قهوه سفید</span>
+              <span class="recommend">پیشنهاد ویژه</span>
+              <span class="price">۵.۹۰ تومان</span>
+            </li>
+            <li>
+              <span>شکلات داغ</span>
+              <span class="price">۵.۵۰ تومان</span>
+            </li>
+            <li>
+              <span>چای سبز</span>
+              <span class="price">۶.۰۰ تومان</span>
+            </li>
+            <li>
+              <span>شکلات تلخ</span>
+              <span class="price">۷.۲۵ تومان</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2>ارتباط با ما</h2>
+        <p>برای اطلاعات بیشتر و رزرو میز با ما در تماس باشید.</p>
 
-    <div class="spacer">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium
-      nam ab cupiditate ratione porro recusandae provident aspernatur! Doloribus
-      quod alias magni! Aperiam blanditiis molestias natus itaque! Ad quas alias
-      provident. Ea voluptatibus nulla natus similique, culpa eaque qui atque
-      veritatis, error sed consectetur quisquam praesentium? Quasi assumenda,
-      modi quidem maiores voluptate repellendus sunt asperiores excepturi
-      labore, molestiae similique soluta odio esse suscipit aliquid fuga
-      laboriosam itaque ratione recusandae nobis officiis? Totam soluta cum
-      consequatur alias saepe maiores quibusdam iste perferendis obcaecati,
-      asperiores non exercitationem adipisci accusamus consequuntur eum sunt
-      officia dolore! Nisi ipsam dignissimos, voluptatem earum labore hic
-      voluptates omnis quae consequuntur iure voluptas sint aperiam quo.
-      Dolorum, enim. Saepe quis commodi nisi quibusdam, vero blanditiis
-      accusantium, nobis possimus sint reiciendis doloremque ex praesentium
-      quod, tempore tempora laudantium repudiandae atque tenetur sit corrupti
-      illo. Sunt repellendus molestiae iure accusantium est harum necessitatibus
-      commodi, alias itaque officiis ullam molestias soluta quas illum! Ducimus
-      dolorem eius magni dolor quis earum numquam alias nostrum eum!
-      Repudiandae, exercitationem beatae esse, est error officiis libero
-      inventore vero ab ea ad, ipsam corrupti excepturi ullam aspernatur ex
-      facere? Ex vero vel nulla qui dolore. Dolorem dolorum nemo reprehenderit
-      similique obcaecati pariatur! Itaque ullam fugiat ratione animi incidunt
-      ut soluta quis facilis alias. Excepturi doloribus, debitis accusantium
-      dolorem corporis incidunt unde provident quidem assumenda tempore! Sed
-      suscipit pariatur inventore quia dolores possimus corrupti ad iusto!
-      Beatae incidunt ad ut exercitationem fugiat tenetur ullam voluptates
-      officia mollitia quisquam commodi recusandae excepturi, aliquid quidem
-      earum ipsa ea! Provident eaque assumenda minus, omnis maxime recusandae
-      dolor sit sint voluptas exercitationem aperiam deserunt rerum, perferendis
-      sequi, aliquid debitis autem ratione dicta nulla possimus tempora quae
-      iusto aliquam culpa. Totam unde, minima voluptatem quisquam placeat fugit
-      ducimus architecto voluptate ex recusandae! Possimus eaque nobis quam
-      dolor expedita quaerat quod deserunt id, iusto, deleniti rerum aliquam
-      veniam aliquid fuga eligendi velit reprehenderit minus nemo omnis
-      laudantium corporis. Reprehenderit dolor alias, incidunt facere tenetur
-      dolorem inventore magnam placeat, repellat necessitatibus ducimus culpa
-      nulla architecto deleniti! Veritatis quisquam qui aut dolore quasi,
-      deleniti quod blanditiis. Necessitatibus incidunt, error eaque saepe ea
-      aut modi dolores officia maxime nisi nobis doloribus ipsum ipsam assumenda
-      provident voluptate quos ipsa a, in quidem dignissimos unde eos. Doloribus
-      aspernatur mollitia cumque repellendus officiis recusandae eveniet numquam
-      at, labore aperiam rem vel ab eligendi enim quae placeat vero nobis? In
-      exercitationem nam voluptatibus consequuntur sit incidunt quo quaerat
-      ipsam praesentium labore repudiandae fugiat ipsum rem aliquid quod error
-      laboriosam officiis expedita repellat, corrupti, odio harum laudantium
-      saepe modi? Facilis laboriosam totam maiores assumenda earum modi ex
-      maxime hic perferendis tenetur, at corrupti esse enim et. Et facilis
-      obcaecati quasi quis sed illum provident beatae distinctio suscipit
-      debitis repudiandae repellat, numquam praesentium, minus corporis alias!
-      Vero ea fuga reprehenderit! Deserunt sint, libero minima molestiae
-      quibusdam mollitia recusandae temporibus aliquam impedit! Consequuntur,
-      quod nostrum tempore, corporis sunt commodi repellat libero totam hic
-      doloremque voluptatum autem! Quidem amet aspernatur dignissimos
-      praesentium quod nihil saepe totam ad. Veniam modi consequuntur quaerat
-      eius suscipit, labore harum dicta voluptas dolor ad non a quo impedit ut
-      veritatis accusantium illum repellendus laboriosam recusandae ducimus
-      earum corporis quas assumenda? Rerum necessitatibus quidem quis tempora
-      ipsum atque explicabo veniam vel totam aut libero, quaerat hic ullam minus
-      natus aperiam corrupti dolore. Molestias tempore quaerat deserunt
-      voluptate qui excepturi, error mollitia reprehenderit, ducimus voluptates
-      corrupti iusto eveniet odio temporibus iure ut atque hic porro repudiandae
-      enim tenetur accusamus quod dolore. Ut ea ab repellendus atque vel, sint
-      non nostrum. Alias iusto amet rem fugiat ipsam incidunt deserunt! Ipsa,
-      voluptatem corporis cupiditate animi dolores distinctio commodi dicta
-      possimus officiis exercitationem nisi dignissimos corrupti incidunt illo
-      sed velit architecto eligendi officia voluptas? Repellat, recusandae
-      cumque commodi placeat delectus ipsa exercitationem voluptatum similique
-      quia dolore consequatur dignissimos soluta possimus molestias illo. Quasi
-      neque voluptas optio totam explicabo ut doloribus error obcaecati rerum
-      quod laborum ab, eligendi dignissimos minus molestiae harum quidem esse
-      odit delectus minima animi, illo ipsa tempora architecto. Corrupti, soluta
-      alias. Laboriosam odit, aperiam maxime sed illo esse, perferendis enim
-      alias saepe, ab vitae. Nesciunt, officiis. Quod ratione sint aperiam porro
-      cupiditate tempore sed aut explicabo deleniti aliquam fuga nam eligendi
-      sequi alias eos facere ipsam, ad dignissimos, laudantium voluptas
-      distinctio quae dicta? Doloremque dolorum molestiae eaque culpa et illo
-      maxime doloribus, reprehenderit magni quis fugit sint quas nostrum enim
-      tempora eligendi molestias at libero pariatur quod nulla ut in dolor!
-      Minima quaerat voluptate, iure dolorum est ipsa quibusdam fugiat!
-      Similique ex amet ducimus illo. In iure cumque vitae quod quis omnis optio
-      quisquam. Facilis veritatis ratione rerum debitis esse. Et ea dolor
-      aperiam totam iure? Modi cum fugiat magni, neque at, voluptates
-      repudiandae corporis nesciunt, veritatis culpa fugit! Totam excepturi
-      dolorum earum asperiores sed. Odit commodi earum neque alias repellat at
-      voluptatum? Obcaecati illum earum beatae delectus reprehenderit animi!
-      Quaerat laboriosam iure eum voluptates laborum dolores, labore saepe
-      libero aliquid officia voluptate dolorem delectus. Blanditiis quaerat
-      harum earum quos omnis eos ratione iure ipsum nulla expedita cumque quas
-      nemo sint molestias corrupti asperiores atque facilis, inventore
-      perferendis aliquid! Quibusdam magnam iusto laboriosam possimus amet ipsam
-      facilis! Minus est cumque nemo quisquam vel perspiciatis culpa earum ea,
-      quaerat hic beatae dignissimos cupiditate iure omnis eos totam praesentium
-      rerum exercitationem quibusdam corrupti eligendi explicabo rem voluptas
-      similique. At distinctio beatae corrupti id eligendi ut tempora debitis
-      voluptate, perferendis modi repellendus ex voluptas eveniet porro nisi
-      vitae vel odio! Tenetur dolorum quo quod hic corrupti, optio itaque
-      laboriosam repellat temporibus accusamus dolore ad alias quaerat esse
-      aliquam molestiae, labore laborum deleniti illum cumque. Illo assumenda
-      omnis fuga! Velit at similique maiores ducimus, esse commodi ex, numquam
-      id, tenetur voluptatum tempore non! Ducimus ratione voluptatibus officia
-      cumque facere. Dolores, odio facilis ea labore tempora libero praesentium
-      amet a obcaecati officiis fugit esse autem sunt delectus dolor. Facere,
-      sunt. Recusandae natus, error maxime enim corrupti ut perspiciatis ipsum
-      pariatur aliquam assumenda porro maiores, culpa omnis est odit quas ipsam
-      ab minima illum vero sequi quasi reiciendis eligendi facere! Deleniti
-      eveniet modi reiciendis error nulla quae!
-    </div>
+        <div class="contact-content">
+          <!-- فرم تماس -->
+          <form class="contact-form">
+            <input type="text" placeholder="نام شما" required />
+            <input type="email" placeholder="ایمیل شما" required />
+            <textarea placeholder="پیام شما" rows="5" required></textarea>
+            <button type="submit" class="btn">ارسال پیام</button>
+          </form>
+
+          <!-- اطلاعات تماس -->
+          <div class="contact-info">
+            <h3>اطلاعات تماس</h3>
+            <p>آدرس: تهران، خیابان آزادی، پلاک ۱۲۳</p>
+            <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+            <p>ایمیل: info@cafeexample.com</p>
+
+            <div class="social-links">
+              <a href="#"
+                ><img src="images/icons/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="images/icons/instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img src="images/icons/twitter.svg" alt="Twitter"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>کپی‌رایت © ۲۰۲۵ کافه باریستا. تمامی حقوق محفوظ است.</p>
+    </footer>
   </body>
 </html>
