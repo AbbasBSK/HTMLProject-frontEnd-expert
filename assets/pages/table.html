@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/table.css" />
+    <link rel="stylesheet" href="/assets/css/flexPage.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="app-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <img src="/assets/images/logo-3.png" alt="" />
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">محصولات</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main class="p_relative main-content">
+        <h1>محصولات ما</h1>
+
+        <table dir="rtl">
+          <thead class="p_sticky">
+            <tr class="border-1 mt_1 ">
+              <th>نام محصول</th>
+              <th>قیمت</th>
+              <th>تصویر</th>
+              <th>تعداد</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-1 mt_1">
+              <td>مانیتور1</td>
+              <td>15,000,000 تومان</td>
+              <td>
+                <a href="#product1">
+                  <img
+                    class="height_2 scale_3"
+                    src="/assets/images/hp.png"
+                    alt=""
+                  />
+                </a>
+              </td>
+              <td>10</td>
+            </tr>
+            <tr class="border-1 mt_1">
+              <td>مانیتور2</td>
+              <td>8,000,000 تومان</td>
+              <td >
+                <a href="#product2">
+                  <img
+                    class="height_2 scale_3"
+                    src="/assets/images/hp2.png"
+                    alt=""
+                  />
+                </a>
+              </td>
+              <td>20</td>
+            </tr>
+            <tr class="border-1 mt_1">
+              <td>مانیتور3</td>
+              <td>8,000,000 تومان</td>
+              <td>
+                <a href="#product3">
+                  <img
+                    class="height_2 scale_3"
+                    src="/assets/images/asus3.png"
+                    alt=""
+                  />
+                </a>
+              </td>
+              <td>20</td>
+            </tr>
+            <tr class="border-1 mt_1">
+              <td>مانیتور3</td>
+              <td>8,000,000 تومان</td>
+              <td>
+                <a href="#product3">
+                  <img
+                    class="height_2 scale_3"
+                    src="/assets/images/asus3.png"
+                    alt=""
+                  />
+                </a>
+              </td>
+              <td>20</td>
+            </tr>
+          </tbody>
+          <tfoot class="">
+            <tr  class="border-1 mt_1 w_10_rem bg_green">
+              <td  colspan="3">جمع کل</td>
+              <td>30</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <div
+          id="product1"
+          class="productModal  d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black"
+        >
+          <img class="w_50 drop_shadow" src="/assets/images/hp.png" alt="" />
+
+          <a class="top_0 left_0  p_absolute close_btn m_2" href="#">❌</a>
+        </div>
+        <div
+          id="product2"
+          class="productModal  d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black"
+        >
+          <img class="w_50 drop_shadow " src="/assets/images/hp2.png" alt="" />
+
+          <a class="top_0 left_0  p_absolute close_btn m_2" href="#">❌</a>
+        </div>
+        <div
+          id="product3"
+          class="productModal  d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black"
+        >
+          <img class="w_50 drop_shadow" src="/assets/images/asus3.png" alt="" />
+
+          <a class="top_0 left_0  p_absolute close_btn m_2" href="#">❌</a>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer" class="footer">
+        <p>&copy; 2023 تمامی حقوق محفوظ است.</p>
+      </footer>
+    </section>
+  </body>
+</html>

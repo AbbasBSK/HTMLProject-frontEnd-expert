@@ -82,7 +82,8 @@ body {
 .main-content {
   padding: 20px;
   text-align: center;
-  background-color: #d3fddf;
+  background-blend-mode: overlay; 
+  background: url(/assets/images/10.jpg) center/cover , rgba(159, 160, 160, 0.8);
   flex: 1;
 }
 
