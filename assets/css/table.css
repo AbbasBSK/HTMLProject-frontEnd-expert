@@ -5,39 +5,45 @@
   transition: all 1s;
   text-decoration: none;
 }
-
   table {
   width: 100%;
+  border-collapse: separate;
+  border-spacing: 0.5rem;
 }
-
-th,td , tr {
-  border: 1px solid #ddd;
+th,td  {
+  border: 2px solid #ffffff;
   padding: 8px;
   text-align: center;
   border-radius: 5px;
 } 
-
-
-tr{
-  background-color: rgba(0, 255, 255, 0.4);
-}
-
+tr{background-color: rgba(0, 255, 255, 0.4);}
 th {
   background-color: #b2b2b2;
   color: #333;
 }
-
-tr:hover {
-  background-color: #f5f5f5;
-}
+tr:hover {background-color: #f5f5f5;}
 tr:active {
- box-shadow: 0 0 1rem inset;
+  background: #b2b2b2;
+ box-shadow: 0 0 16px inset;
 }
-
 
 .scale_3:hover {
   transform: scale(3);
   filter: drop-shadow(0 0 3px black);
+}
+
+.background_blur_black {
+  background-color: #33333390;
+  backdrop-filter: blur(0.2rem);
+}
+
+.close_btn{
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 2px solid red;
+  border-radius: 100%;
+  background-color: black;
 }
 
 .productModal {
@@ -45,12 +51,24 @@ tr:active {
   visibility: hidden;
 }
 
-
-
 .productModal:target {
   opacity: 1;
   visibility: visible;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -60,12 +78,9 @@ tr:active {
   background-color: rgba(172, 255, 47, 0.4);
 }
 
-
 .height_2 {
   height: 2rem;
 }
-
-
 
 .w_50 {
   width: 50%;
@@ -83,11 +98,6 @@ tr:active {
 
 .m_2{
   margin: 2rem;
-}
-
-.background_blur_black {
-  background-color: #33333390;
-  backdrop-filter: blur(2px);
 }
 
 .p_absolute {
@@ -121,16 +131,13 @@ tr:active {
 }
 
 
-.close_btn{
-  width: 2rem;
-  height: 2rem;
-  font-size: 1.2rem;
-  border: 2px solid red;
-  border-radius: 100%;
-  background-color: black;
-}
+/* new style */
 
 
+
+
+
+/* media style */
 
 
 @media (max-width: 600px) {
