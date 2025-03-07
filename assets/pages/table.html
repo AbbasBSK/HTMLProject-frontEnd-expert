@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/table.css" />
     <link rel="stylesheet" href="/assets/css/flexPage.css" />
+    <link rel="stylesheet" href="/assets/css/table.css" />
     <title>Document</title>
   </head>
   <body>
@@ -14,6 +14,8 @@
         <div class="logo">
           <img src="/assets/images/logo-3.png" alt="" />
         </div>
+
+        <!-- desktop menu -->
         <nav class="menu">
           <ul>
             <li><a href="#">خانه</a></li>
@@ -22,6 +24,20 @@
             <li><a href="#">تماس با ما</a></li>
           </ul>
         </nav>
+
+
+        <!-- mobile menu -->
+        <details class="mobileMenu d_mobile ">
+          <summary>
+            <img class="color_white" width="25px" src="/assets/images/svg/menu-alt-svgrepo-com.svg" alt="">
+          </summary>
+          <ul class="p_absolute  right_1  z_index1">
+            <li class="d_block"><a href="#">خانه</a></li>
+            <li class="d_block"><a href="#">محصولات</a></li>
+            <li class="d_block"><a href="#">درباره ما</a></li>
+            <li class="d_block"><a href="#">تماس با ما</a></li>
+          </ul>
+        </details>
       </header>
 
       <!-- Main Content -->
@@ -30,7 +46,7 @@
 
         <table dir="rtl">
           <thead class="p_sticky">
-            <tr class="border-1 mt_1 ">
+            <tr class="border-1 mt_1">
               <th>نام محصول</th>
               <th>قیمت</th>
               <th>تصویر</th>
@@ -52,10 +68,52 @@
               </td>
               <td>10</td>
             </tr>
+            <tr class="border-1 mt_1">
+              <td>مانیتور1</td>
+              <td>15,000,000 تومان</td>
+              <td>
+                <a href="#product1">
+                  <img
+                    class="height_2 scale_3"
+                    src="/assets/images/hp.png"
+                    alt=""
+                  />
+                </a>
+              </td>
+              <td>10</td>
+            </tr>
+            <tr class="border-1 mt_1">
+              <td>مانیتور1</td>
+              <td>15,000,000 تومان</td>
+              <td>
+                <a href="#product1">
+                  <img
+                    class="height_2 scale_3"
+                    src="/assets/images/hp.png"
+                    alt=""
+                  />
+                </a>
+              </td>
+              <td>10</td>
+            </tr>
+            <tr class="border-1 mt_1">
+              <td>مانیتور1</td>
+              <td>15,000,000 تومان</td>
+              <td>
+                <a href="#product1">
+                  <img
+                    class="height_2 scale_3"
+                    src="/assets/images/hp.png"
+                    alt=""
+                  />
+                </a>
+              </td>
+              <td>10</td>
+            </tr>
           </tbody>
           <tfoot class="">
-            <tr  class="border-1 mt_1 w_10_rem bg_green">
-              <td  colspan="3">جمع کل</td>
+            <tr class="border-1 mt_1 w_10_rem bg_green">
+              <td colspan="3">جمع کل</td>
               <td>30</td>
             </tr>
           </tfoot>
@@ -63,15 +121,12 @@
 
         <div
           id="product1"
-          class="productModal  d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black"
+          class="productModal d_flex align_items_center justify_content_center top_0 p_absolute w_100 h_100 left_0 background_blur_black"
         >
           <img class="w_50 drop_shadow" src="/assets/images/hp.png" alt="" />
 
-          <a class="top_0 left_0  p_absolute close_btn m_2" href="#">❌</a>
+          <a class="top_0 left_0 p_absolute close_btn m_2" href="#">❌</a>
         </div>
-
-
-
       </main>
 
       <!-- Footer -->
