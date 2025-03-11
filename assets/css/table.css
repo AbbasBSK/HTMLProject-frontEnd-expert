@@ -133,6 +133,10 @@ summary {
   list-style-type: none;
 }
 
+.rounded{
+  border-radius: 1rem;
+}
+
 
 
 .d_mobile {
