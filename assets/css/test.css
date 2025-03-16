@@ -73,19 +73,3 @@ body{
     border-radius: 100%;
     box-shadow: 0 0 1rem black;
 }
-
-@media (max-width : 768px) {
-    .musicBox{
-        flex-direction: column;
-    }
-
-    .videoBox {
-        height: 25vh;
-    }
-    .videoBox button {
-        display: none;
-    }
-    
-    
-    
-}
