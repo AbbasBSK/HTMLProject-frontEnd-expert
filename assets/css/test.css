@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+body{
+    background: url(/assets/images/10.jpg) center/cover , rgba(255, 255, 255, 0.491);
+    background-blend-mode: overlay;
+}
 
 .mediaSection {
     display: flex;
@@ -19,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .videoBox {
@@ -67,4 +72,20 @@
     object-fit: cover;
     border-radius: 100%;
     box-shadow: 0 0 1rem black;
+}
+
+@media (max-width : 768px) {
+    .musicBox{
+        flex-direction: column;
+    }
+
+    .videoBox {
+        height: 25vh;
+    }
+    .videoBox button {
+        display: none;
+    }
+    
+    
+    
 }
