@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(/assets/images/10.jpg) center/cover , rgba(255, 255, 255, 0.491);
+    background: url(/assets/images/10.jpg) center/cover no-repeat, rgba(255, 255, 255, 0.491);
     background-blend-mode: overlay;
 }
 
@@ -72,4 +72,15 @@ body{
     object-fit: cover;
     border-radius: 100%;
     box-shadow: 0 0 1rem black;
+}
+
+@media (max-width : 768px) {
+    .videoBox {
+        height: 25vh;
+    }
+    
+    .musicBox {
+        flex-direction: column;
+    }
+      
 }
