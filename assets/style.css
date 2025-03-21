@@ -21,6 +21,20 @@
     rgba(0, 0, 0, 0.526));
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: yekan;
+  font-style: oblique;
+  font-weight: bolder;
+  height: 100vh;
+  background-color: rgb(237, 234, 234);
+  text-align: center;
+  direction: rtl;
+  }
 .headerWeb .title {
   color: red;
   font-size: 20px;
@@ -43,7 +57,7 @@
 
 #main {
   height: 60%;
-  /* background-color: chartreuse; */
+  background-color: chartreuse;
   padding-top: 1px;
   background-blend-mode: overlay;
   background: url(/assets/images/0003.jpeg) center / cover no-repeat,
@@ -57,15 +71,6 @@
   text-align: center;
 }
 
-body {
-  font-family: yekan;
-  font-style: oblique;
-  font-weight: bolder;
-  height: 100vh;
-  background-color: rgb(237, 234, 234);
-  text-align: center;
-  direction: rtl;
-  }
 
 a {
   text-decoration: dashed;
