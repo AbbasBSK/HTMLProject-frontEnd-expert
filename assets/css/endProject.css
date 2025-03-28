@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+
+}
+
+header{
+  background-color: #FFC107;
+}
+
+.navBar{
+  height: 150px;
+  background-color: #0A490A;
+}
+
+.bg_aqua{
+  background-color: aqua;
+}
