@@ -63,13 +63,12 @@
   transform: scale(0.6);
 }
 
-
-/* banner styles  */
-
+ /* banner section styles */
 .banner {
   position: relative;
   background-color: #FFC107;
-  padding: 3em 5rem;
+  padding: 3em 5rem; 
+  color: #0A490A;
 }
 
 .banner .badge {
@@ -77,24 +76,18 @@
   padding: 0.3em 1rem;
   border-radius: 0.8rem;
   font-size: 0.8rem;
-  color: #0A490A;
 }
 
 .title {
   font-size: 5rem;
-  color: #0A490A;
 }
-
-.paragraphBanner{
+.about{
   width: 70%;
   font-size: 1.5rem;
-  color: #0A490A
 }
-
 .btnBanner {
   font-size: 1rem;
   padding: 0.3rem 1.5rem;
-  color: #0A490A;
   border-radius: 0.5rem;
   background-color: #B4C8B1;
   font-weight: bolder;
@@ -103,12 +96,8 @@
   align-items: center;
   gap: 1rem;
   border: none;
+  color: inherit;
 }
-.btnBanner img{
-  width: 0.5rem;
-}
-
-
 .dicount {
   position: absolute;
   text-align: center;
@@ -118,7 +107,9 @@
   top: 2rem;
   display: inline-block;
   width: 6rem;
-
+}
+.dicount img {
+  width:100% ;
 }
 
 .dicount strong {
@@ -143,70 +134,39 @@ width: 100%;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-::placeholder {
-  color: white;
-  text-align: center;
-}
-
-.w_75 {
-  width: 75%;
-}
-
-.w_100 {
-  width: 100%;
-}
+/* class based styles */
 
 .mt_1 {
   margin-top: 1rem;
 }
 
-.d_flex {
-  display: flex;
-}
 
-.gap_2 {
-  gap: 2rem;
-}
 
-.height_100 {
-  height: 100%;
-}
 
-.iconBox img {
-  height: 2rem;
-}
 
-.bg_aqua {
-  background-color: aqua;
-}
 
-.text_white {
-  color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mt_1 {
+  margin-top: 1rem;
 }
