@@ -39,6 +39,7 @@
   color: inherit;
   padding-inline: 1rem;
   border: 1px solid white;
+  text-align: center;
 }
 
 .searchBox select option {
@@ -63,11 +64,11 @@
   transform: scale(0.6);
 }
 
- /* banner section styles */
+/* banner section styles */
 .banner {
   position: relative;
   background-color: #FFC107;
-  padding: 3em 5rem; 
+  padding: 3em 5rem;
   color: #0A490A;
 }
 
@@ -81,10 +82,12 @@
 .title {
   font-size: 5rem;
 }
-.about{
+
+.about {
   width: 70%;
   font-size: 1.5rem;
 }
+
 .btnBanner {
   font-size: 1rem;
   padding: 0.3rem 1.5rem;
@@ -98,6 +101,7 @@
   border: none;
   color: inherit;
 }
+
 .dicount {
   position: absolute;
   text-align: center;
@@ -108,8 +112,9 @@
   display: inline-block;
   width: 6rem;
 }
+
 .dicount img {
-  width:100% ;
+  width: 100%;
 }
 
 .dicount strong {
@@ -128,9 +133,100 @@
   right: 0;
   bottom: 0;
 }
-.fruitsBanner img{
-width: 100%;
+
+.fruitsBanner img {
+  width: 100%;
 }
+
+
+/* container styles */
+
+/* product Introduction styles */
+
+.titleIntroduction {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.titleIntroduction strong {
+  font-size: 2rem;
+  color: #003500;
+}
+
+
+.productsSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.productItem {
+  width: 20%;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInformation {
+  position: absolute;
+  bottom: 0;
+  padding: 0.8rem;
+  z-index: 1;
+}
+
+.productInformation h4 {
+  color: #FFC107;
+}
+
+.productInformation p {
+  font-size: 0.7rem;
+  margin-bottom: .5rem;
+}
+
+.productInformation button,
+.productBtn {
+  background-color: #FFC107;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: .7rem;
+  padding: .2rem .5rem;
+  border-radius: 0.5rem;
+  color: #0A490A;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+}
+
+.productInformation img,
+.productBtn img {
+  width: .5rem;
+}
+
+.productCover {
+  position: absolute;
+  background-color: rgba(13, 11, 11, 0.501);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: all 1s;
+}
+
+.productItem:hover .productCover {
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
 
 
 
