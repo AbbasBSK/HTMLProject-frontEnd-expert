@@ -146,7 +146,7 @@
 .titleIntroduction {
   display: flex;
   justify-content: space-around;
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-bottom: 1rem;
 }
 .titleIntroduction strong {
@@ -232,9 +232,6 @@
 
 /* class based styles */
 
-.mt_1 {
-  margin-top: 1rem;
-}
 
 .bg_white {
   background-color: #FFFFFF;
@@ -246,7 +243,7 @@
   background-color: #FFC107;
 }
 .text_white {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 .text_yellow {
   color: #FFC107;
@@ -254,11 +251,41 @@
 .text_green {
   color: #0A490A;
 }
-.border_green{
-  border: 1px solid #0A490A;
+
+.text_1{
+  font-size: .5rem;
+}
+.text_2{
+  font-size: 1rem;
+}
+.text_3{
+  font-size: 1.5rem;
+}
+.text_4{
+  font-size: 2rem;
+}
+.text_bold{
+  font-weight: bolder;
 }
 
-.rounded{
+.text_center{
+  text-align: center;
+}
+
+.border_white{
+  border: 2px solid #fff;
+}
+.border_green{
+  border: 2px solid #0A490A;
+}
+.border_none{
+  border: none;
+}
+
+.rounded_1{
+  border-radius: 0.5rem;
+}
+.rounded_2{
   border-radius: 1rem;
 }
 .d_flex {
@@ -271,6 +298,9 @@
 
 .justify_content_center {
   justify-content: center;
+}
+.justify_content_space {
+  justify-content: space-between;
 }
 
 .flex_direction_column{
@@ -285,16 +315,30 @@
 }
 
 .p_1{
-  padding: 1rem;
+  padding: 0.5rem;
 }
+
 .p_2{
+  padding: 1rem;
+
+}
+.p_3{
   padding: 2rem;
 }
 
+.mt_5 {
+  margin-top: 4rem;
+}
+.mt_2 {
+  margin-top: 1rem;
+}
 .mt_1{
-  margin-top: .5rem;
+  margin-top: .5rem !important;
 }
 
+.w_25 {
+  width: 25%;
+}
 .w_30 {
   width: 30%;
 }
@@ -306,6 +350,9 @@
 }
 .w_70 {
   width: 70%;
+}
+.w_80 {
+  width: 80%;
 }
 .w_50 {
   width: 50%;
@@ -328,50 +375,78 @@
   position: sticky;
   top: 0;
 }
+
+.p_h_center{
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
 .top_0 {
   top: 0;
 }
+.top_1 {
+  top: 0.5rem;
+}
 .left_0 {
-  left: 0;
+  left: 0 !important;
+}
+.right_0 {
+  right: 0 !important;
 }
 .right_1 {
-  right: 1rem;
+  right: .5rem;
+}
+.right_2 {
+  right: 1.5rem;
+}
+.left_1 {
+  left: .5rem;
 }
 .z_index1 {
   z-index: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mt_1 {
-  margin-top: 1rem;
+.pointer{
+  cursor: pointer;
 }
+
+.list_style_none{
+  list-style: none;
+}
+
+.click:focus{
+  color: #FFC107;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

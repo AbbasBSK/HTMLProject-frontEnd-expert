@@ -56,10 +56,10 @@
     <!-- banner section -->
     <section class="banner">
       <label class="badge" for="">Daily Discounti</label>
-      <h1 class="title mt_1">Fruits § <br>
+      <h1 class="title mt_2">Fruits § <br>
         Vegetables
       </h1>
-      <p class="about mt_1">These superfoods are packed with vital nutrients, including vitamins
+      <p class="about mt_2">These superfoods are packed with vital nutrients, including vitamins
         and minerals that can help keep you health. Plus, they’re easy to
         enjoy-just add water and let the magic happen!
       </p>
@@ -220,45 +220,327 @@
         </button>
       </div>
 
-      <section class="cardSction">
+      <section class="cardSction d_flex
+      justify_content_center
+      gap_2">
 
         <div
-          class="cardItem text_green border_green rounded d_flex align_items_center justify_content_center flex_direction_column p_1 w_30">
+          class="cardItem text_green border_green rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_25 p_relative">
           <img class="w_100" src="/assets/images/endProject/card (3).png" alt="">
           <div class="cardInformation w_100 d_flex flex_direction_column gap_1">
             <span>Fruits</span>
             <strong>Pomme</strong>
             <div class="starBox">
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9734;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9734;</span>
+              <span class="star text_2 ">(1)</span>
             </div>
             <div class="sellBox">
-              <b>175.00 </b>
-              <small>DA</small>
-              <del>240.00 </del>
-              <small>DA</small>
+              <b class="text_3">175.00 </b>
+              <small class="text_1">DA</small>
+              <del class="text_3">240.00 </del>
+              <small class="text_1">DA</small>
             </div>
-            <div class="inputBox d_flex gap_1">
+            <div class="inputBox d_flex gap_1 w_80">
               <div class="sizeBox w_60">
                 <label for="">Size:</label>
-                <select class=" w_100 mt_1" name="" id="">
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                </select>
+                <div class="p_relative">
+                  <select class="p_1 rounded_1 w_100 mt_1 border_green" name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                  <small class="p_h_center right_2">Kg</small>
+                </div>
+
               </div>
-              <div class="quantityBox w_40">
+              <div class="quantityBox w_40 ">
                 <label for="">Quantity:</label>
-                <input class="w_100 mt_1" type="text">
+                <div class="p_relative">
+                  <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                  <small class="p_h_center right_1 pointer text_2">+</small>
+                  <small class="p_h_center left_1 pointer text_2">-</small>
+                </div>
               </div>
             </div>
-            <button class="cardBtn">Add to Cart &nbsp; ›</button>
+            <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">Add to Cart &nbsp; ›</button>
 
-            <span class="heart">&hearts; &#9825;</span>
           </div>
+          <span class="heart  p_absolute text_4 top_1 right_2"> &#9825;</span>
+
+        </div>
+        <div
+          class="cardItem text_green border_green rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_25 p_relative">
+          <img class="w_100" src="/assets/images/endProject/card (2).png" alt="">
+          <div class="cardInformation w_100 d_flex flex_direction_column gap_1">
+            <span>Fruits</span>
+            <strong>Pomme</strong>
+            <div class="starBox">
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9734;</span>
+              <span class="star text_2 ">(1)</span>
+            </div>
+            <div class="sellBox">
+              <b class="text_3">175.00 </b>
+              <small class="text_1">DA</small>
+              <del class="text_3">240.00 </del>
+              <small class="text_1">DA</small>
+            </div>
+            <div class="inputBox d_flex gap_1 w_80">
+              <div class="sizeBox w_60">
+                <label for="">Size:</label>
+                <div class="p_relative">
+                  <select class="p_1 rounded_1 w_100 mt_1 border_green" name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                  <small class="p_h_center right_2">Kg</small>
+                </div>
+
+              </div>
+              <div class="quantityBox w_40 ">
+                <label for="">Quantity:</label>
+                <div class="p_relative">
+                  <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                  <small class="p_h_center right_1 pointer text_2">+</small>
+                  <small class="p_h_center left_1 pointer text_2">-</small>
+                </div>
+              </div>
+            </div>
+            <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">Add to Cart &nbsp; ›</button>
+
+          </div>
+          <span class="heart text_yellow p_absolute text_4 top_1 right_2">&hearts; </span>
+
+        </div>
+        <div
+          class="cardItem text_green border_green rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_25 p_relative">
+          <img class="w_100" src="/assets/images/endProject/card (1).png" alt="">
+          <div class="cardInformation w_100 d_flex flex_direction_column gap_1">
+            <span>Fruits</span>
+            <strong>Pomme</strong>
+            <div class="starBox">
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9734;</span>
+              <span class="star text_2 ">(1)</span>
+            </div>
+            <div class="sellBox">
+              <b class="text_3">175.00 </b>
+              <small class="text_1">DA</small>
+              <del class="text_3">240.00 </del>
+              <small class="text_1">DA</small>
+            </div>
+            <div class="inputBox d_flex gap_1 w_80">
+              <div class="sizeBox w_60">
+                <label for="">Size:</label>
+                <div class="p_relative">
+                  <select class="p_1 rounded_1 w_100 mt_1 border_green" name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                  <small class="p_h_center right_2">Kg</small>
+                </div>
+
+              </div>
+              <div class="quantityBox w_40 ">
+                <label for="">Quantity:</label>
+                <div class="p_relative">
+                  <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                  <small class="p_h_center right_1 pointer text_2">+</small>
+                  <small class="p_h_center left_1 pointer text_2">-</small>
+                </div>
+              </div>
+            </div>
+            <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">Add to Cart &nbsp; ›</button>
+
+          </div>
+          <span class="heart  p_absolute text_4 top_1 right_2"> &#9825;</span>
+
+        </div>
+
+      </section>
+
+
+
+
+    </section>
+
+
+    <!-- categories section -->
+    <section class="productIntroduction bg_green mt_5 p_2 ">
+      <div class="titleIntroduction mt_1 ">
+        <strong class="textTitleInt text_white">Love our Categories</strong>
+        <button class="productBtn">
+          <span>Show more</span>
+          <img src="/assets/images/endProject/arrow.png" alt="">
+        </button>
+      </div>
+
+      <ul  class="d_flex justify_content_center gap_2 w_80 list_style_none text_white p_2">
+        <li class="click pointer" tabindex="1">All Categories </li>
+        <li class="click pointer" tabindex="1">Categories </li>
+        <li class="click pointer" tabindex="1">All Categories </li>
+        <li class="click pointer" tabindex="1">Categories </li>
+        <li class="click pointer" tabindex="1">Categories </li>
+      </ul>
+
+      <section class="cardSction d_flex
+      justify_content_center
+      gap_2">
+
+        <div
+          class="cardItem text_white  border_white rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_25 p_relative">
+          <img class="w_100" src="/assets/images/endProject/card (3).png" alt="">
+          <div class="cardInformation w_100 d_flex flex_direction_column gap_1">
+            <span>Fruits</span>
+            <strong>Pomme</strong>
+            <div class="starBox">
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9734;</span>
+              <span class="star text_2 ">(1)</span>
+            </div>
+            <div class="sellBox">
+              <b class="text_3">175.00 </b>
+              <small class="text_1">DA</small>
+              <del class="text_3">240.00 </del>
+              <small class="text_1">DA</small>
+            </div>
+            <div class="inputBox text_green d_flex gap_1 w_80">
+              <div class="sizeBox w_60">
+                <label for="">Size:</label>
+                <div class="p_relative">
+                  <select class="p_1 rounded_1 w_100 mt_1 border_green" name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                  <small class="p_h_center right_2">Kg</small>
+                </div>
+
+              </div>
+              <div class="quantityBox w_40 ">
+                <label for="">Quantity:</label>
+                <div class="p_relative">
+                  <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                  <small class="p_h_center right_1 pointer text_2">+</small>
+                  <small class="p_h_center left_1 pointer text_2">-</small>
+                </div>
+              </div>
+            </div>
+            <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">Add to Cart &nbsp; ›</button>
+
+          </div>
+          <span class="heart  p_absolute text_4 top_1 right_2"> &#9825;</span>
+
+        </div>
+        <div
+          class="cardItem text_white  border_white rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_25 p_relative">
+          <img class="w_100" src="/assets/images/endProject/card (2).png" alt="">
+          <div class="cardInformation w_100 d_flex flex_direction_column gap_1">
+            <span>Fruits</span>
+            <strong>Pomme</strong>
+            <div class="starBox">
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9734;</span>
+              <span class="star text_2 ">(1)</span>
+            </div>
+            <div class="sellBox">
+              <b class="text_3">175.00 </b>
+              <small class="text_1">DA</small>
+              <del class="text_3">240.00 </del>
+              <small class="text_1">DA</small>
+            </div>
+            <div class="inputBox text_green d_flex gap_1 w_80">
+              <div class="sizeBox w_60">
+                <label for="">Size:</label>
+                <div class="p_relative">
+                  <select class="p_1 rounded_1 w_100 mt_1 border_green" name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                  <small class="p_h_center right_2">Kg</small>
+                </div>
+
+              </div>
+              <div class="quantityBox w_40 ">
+                <label for="">Quantity:</label>
+                <div class="p_relative">
+                  <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                  <small class="p_h_center right_1 pointer text_2">+</small>
+                  <small class="p_h_center left_1 pointer text_2">-</small>
+                </div>
+              </div>
+            </div>
+            <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">Add to Cart &nbsp; ›</button>
+
+          </div>
+          <span class="heart text_yellow p_absolute text_4 top_1 right_2">&hearts; </span>
+
+        </div>
+        <div
+          class="cardItem text_white  border_white rounded_2 d_flex align_items_center justify_content_space flex_direction_column p_2 w_25 p_relative">
+          <img class="w_100" src="/assets/images/endProject/card (1).png" alt="">
+          <div class="cardInformation w_100 d_flex flex_direction_column gap_1">
+            <span>Fruits</span>
+            <strong>Pomme</strong>
+            <div class="starBox">
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9733;</span>
+              <span class="star text_yellow text_3">&#9734;</span>
+              <span class="star text_2 ">(1)</span>
+            </div>
+            <div class="sellBox">
+              <b class="text_3">175.00 </b>
+              <small class="text_1">DA</small>
+              <del class="text_3">240.00 </del>
+              <small class="text_1">DA</small>
+            </div>
+            <div class="inputBox text_green d_flex gap_1 w_80">
+              <div class="sizeBox w_60">
+                <label for="">Size:</label>
+                <div class="p_relative">
+                  <select class="p_1 rounded_1 w_100 mt_1 border_green" name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                  <small class="p_h_center right_2">Kg</small>
+                </div>
+
+              </div>
+              <div class="quantityBox w_40 ">
+                <label for="">Quantity:</label>
+                <div class="p_relative">
+                  <input class="p_1 rounded_1 w_100 mt_1 border_green text_center" type="number">
+                  <small class="p_h_center right_1 pointer text_2">+</small>
+                  <small class="p_h_center left_1 pointer text_2">-</small>
+                </div>
+              </div>
+            </div>
+            <button class="cardBtn text_yellow text_green rounded_1 bg_yellow p_1 border_none">Add to Cart &nbsp; ›</button>
+
+          </div>
+          <span class="heart  p_absolute text_4 top_1 right_2"> &#9825;</span>
 
         </div>
 
