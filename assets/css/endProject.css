@@ -242,6 +242,12 @@
 .bg_yellow {
   background-color: #FFC107;
 }
+.bg_orange {
+  background-color: #E46002;
+}
+.bg_pink {
+  background-color: #EF174B;
+}
 .text_white {
   color: #FFFFFF !important;
 }
@@ -313,6 +319,9 @@
 .gap_2{
   gap: 1rem;
 }
+.gap_3{
+  gap: 1.5rem;
+}
 
 .p_1{
   padding: 0.5rem;
@@ -329,6 +338,12 @@
 .mt_5 {
   margin-top: 4rem;
 }
+.mt_4 {
+  margin-top: 3rem;
+}
+.mt_3 {
+  margin-top: 2rem;
+}
 .mt_2 {
   margin-top: 1rem;
 }
@@ -336,6 +351,9 @@
   margin-top: .5rem !important;
 }
 
+.w_20 {
+  width: 20%;
+}
 .w_25 {
   width: 25%;
 }
@@ -426,14 +444,8 @@
 }
 
 .card_image {
-  position: absolute;
-  bottom: -1rem;
-  right: -1rem;
-  width: 5rem;
-  height: auto;
-}
-.card_container {
-  position: relative;
+  top: -2rem;
+  right: -2rem;
 }
 
 
