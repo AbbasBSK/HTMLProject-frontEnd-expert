@@ -425,6 +425,17 @@
   color: #FFC107;
 }
 
+.card_image {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 5rem;
+  height: auto;
+}
+.card_container {
+  position: relative;
+}
+
 
 
 
