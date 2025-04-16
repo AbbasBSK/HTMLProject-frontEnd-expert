@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navbar {
@@ -146,11 +147,12 @@
 .titleIntroduction {
   display: flex;
   justify-content: space-around;
-  margin-top: 5rem;
+  align-items: center;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 .titleIntroduction strong {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #003500;
 }
 
@@ -200,7 +202,7 @@
   justify-content: center;
   gap: 1.5rem;
   font-size: .7rem;
-  padding: .2rem .5rem;
+  padding: .5rem .5rem;
   border-radius: 0.5rem;
   color: #0A490A;
   font-weight: bolder;
@@ -225,6 +227,24 @@
 .productItem:hover .productCover {
   background-color: rgba(0, 0, 0, 0.1);
 
+}
+
+/* main banner section  */
+.mainBannerBoxLeft ,.mainBannerBoxRight{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-blend-mode: overlay;
+  padding:  7rem 0 2rem 0;
+  color: white;
+}
+.mainBannerBoxRight{
+  background: url(/assets/images/endProject/clem\ \(2\).png) center /cover no-repeat , rgba(0, 0, 0, 0.464);
+}
+.mainBannerBoxLeft{
+  background: url(/assets/images/endProject/clem\ \(1\).png) center /cover no-repeat , rgba(0, 0, 0, 0.464);
 }
 
 
@@ -270,6 +290,9 @@
 .text_4{
   font-size: 2rem;
 }
+.text_5{
+  font-size: 3rem;
+}
 .text_bold{
   font-weight: bolder;
 }
@@ -300,6 +323,9 @@
 
 .align_items_center {
   align-items: center;
+}
+.align_items_start {
+  align-items: start;
 }
 
 .justify_content_center {
@@ -333,6 +359,9 @@
 }
 .p_3{
   padding: 2rem;
+}
+.pt_10{
+padding-top: 10rem;
 }
 
 .mt_5 {
