@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -247,6 +248,38 @@
   background: url(/assets/images/endProject/clem\ \(1\).png) center /cover no-repeat , rgba(0, 0, 0, 0.464);
 }
 
+/* other class */
+
+.arrowIcon{
+  width: 1rem;
+}
+
+.topScroll{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  color: #003500;
+  opacity: 30%;
+  transition: all 1s;
+  outline: 2px solid #003500;
+  outline-offset: 2px;
+  font-size: 1.5rem;
+}
+.topScroll:hover{
+  opacity: 100%;
+  box-shadow: 0 0 1rem #003500;
+  background-color: #003500;
+  color: white;
+}
+
+
+
 
 
 
@@ -279,7 +312,7 @@
 }
 
 .text_1{
-  font-size: .5rem;
+  font-size: .7rem;
 }
 .text_2{
   font-size: 1rem;
@@ -299,6 +332,9 @@
 
 .text_center{
   text-align: center;
+}
+.text_justify{
+  text-align: justify;
 }
 
 .border_white{
@@ -348,6 +384,12 @@
 .gap_3{
   gap: 1.5rem;
 }
+.gap_4{
+  gap: 2rem;
+}
+.gap_5{
+  gap: 3rem;
+}
 
 .p_1{
   padding: 0.5rem;
@@ -362,6 +404,10 @@
 }
 .pt_10{
 padding-top: 10rem;
+}
+
+.p_inline_3{
+  padding-inline: 2rem;
 }
 
 .mt_5 {
