@@ -285,6 +285,13 @@
 
 /* class based styles */
 
+.cardImg {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
 
 .bg_white {
   background-color: #FFFFFF;
