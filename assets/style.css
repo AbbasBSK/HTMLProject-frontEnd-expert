@@ -12,13 +12,13 @@
 .headerWeb {
   /* background-color: aqua; */
   height: 20%;
-  text-align: center;
-  background:  radial-gradient(
+  /* text-align: center; */
+  /* background:  radial-gradient(
     circle 900px,
     rgba(0, 0, 255, 0.57),
     rgba(0, 0, 0, 0.438),
     rgba(255, 0, 0, 0.418),
-    rgba(0, 0, 0, 0.526));
+    rgba(0, 0, 0, 0.526)); */
 }
 
 *{
@@ -38,12 +38,13 @@ body {
 .headerWeb .title {
   color: red;
   font-size: 20px;
-  text-align: center;
+  /* text-align: center; */
   width: 200px;
   height: 100px;
   line-height: 5;
+  margin-inline: auto;
   background-color: blue;
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 20px;
   /* border-radius: 20% 50%; */
   border-start-start-radius: 20px;
