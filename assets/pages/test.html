@@ -1,51 +1,45 @@
-<!DOCTYPE html>
-<html lang="fa">
+<!doctype html>
+<html lang="fa" dir="rtl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>test</title>
-  <link rel="stylesheet" href="/assets/css/test.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/test.css">
+  <title>تمرین بزرگ: Media Query vs clamp()</title>
 </head>
 
 <body>
+  <div class="container">
+    <header class="hero" role="banner">
+      <div>
+        <h1 class="title">عنوان بزرگ و واکنش‌پذیر (Media Query)</h1>
+        <div class="subtitle">توضیح کوتاه دربارهٔ تمرین — اندازه‌ها با media query تغییر می‌کنند.</div>
+        <a class="cta" href="#">همین حالا امتحان کن</a>
+      </div>
+      <img class="hero-img" alt="hero sample"
+        src="data:image/svg+xml;utf8,
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'><rect width='100%' height='100%' fill='%230b1220'/><text x='50%' y='50%' fill='%23ffd166' dominant-baseline='middle' text-anchor='middle' font-size='48'>Hero</text></svg>">
+    </header>
 
-<section class="mediaSection">
-  <div class="videoBox">
-    <video  autoplay loop src="/assets/video/tesla.webm"></video>
-
-    <button class="title">musicPlayer</button>
+    <section class="cards" aria-label="cards">
+      <article class="card">
+        <h3>کارت ۱</h3>
+        <p>توضیحی کوتاه دربارهٔ کارت اول.</p>
+      </article>
+      <article class="card">
+        <h3>کارت ۲</h3>
+        <p>توضیحی کوتاه دربارهٔ کارت دوم.</p>
+      </article>
+      <article class="card">
+        <h3>کارت ۳</h3>
+        <p>توضیحی کوتاه دربارهٔ کارت سوم.</p>
+      </article>
+      <article class="card">
+        <h3>کارت ۴</h3>
+        <p>توضیحی کوتاه دربارهٔ کارت چهارم.</p>
+      </article>
+    </section>
   </div>
-
-
-  <div class="musicBox">
-    <div class="musicItem">
-      <img  src="/assets/images/13.jpg" alt="">
-      <audio controls src="/assets/audio/Instrumental Angizeshi Bikalam - 02.mp3"></audio>
-    </div>
-    <div class="musicItem">
-      <img  src="/assets/images/13.jpg" alt="">
-      <audio controls src="/assets/audio/Instrumental Angizeshi Bikalam - 02.mp3"></audio>
-    </div>
-    <div class="musicItem">
-      <img  src="/assets/images/13.jpg" alt="">
-      <audio controls src="/assets/audio/Instrumental Angizeshi Bikalam - 02.mp3"></audio>
-    </div>
-  </div>
-  <div class="musicBox">
-    <div class="musicItem">
-      <img  src="/assets/images/13.jpg" alt="">
-      <audio controls src="/assets/audio/Instrumental Angizeshi Bikalam - 02.mp3"></audio>
-    </div>
-    <div class="musicItem">
-      <img  src="/assets/images/13.jpg" alt="">
-      <audio controls src="/assets/audio/Instrumental Angizeshi Bikalam - 02.mp3"></audio>
-    </div>
-    <div class="musicItem">
-      <img  src="/assets/images/13.jpg" alt="">
-      <audio controls src="/assets/audio/Instrumental Angizeshi Bikalam - 02.mp3"></audio>
-    </div>
-  </div>
-</section>
+</body>
 
 </html>

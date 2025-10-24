@@ -181,3 +181,19 @@ summary {
     display: inline-block;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link:focus + div {
+  height: 10rem;
+}

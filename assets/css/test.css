@@ -5,7 +5,7 @@
     src: url("/assets/font/persianFont/yekan-font/yekan-regular.ttf");
 }
 
-* {
+/* * {
     font-family: yekan;
     margin: 0;
     padding: 0;
@@ -83,4 +83,207 @@ body{
         flex-direction: column;
     }
       
-}
+} */
+
+
+    :root {
+      --bg: #0f172a;
+      --card: #0b1220;
+      --accent: #ffd166;
+      --text: #eef2ff;
+      --container-max: 1200px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family : yekan;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #0f3d91);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* کانتینر مرکزی */
+    .container {
+      max-width: var(--container-max);
+      margin: 32px auto;
+      padding: 32px;
+    }
+
+    /* هدر / عنوان بزرگ (hero) */
+    header.hero {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    .hero .title {
+      margin: 0;
+      font-weight: 800;
+      /* font-size: 44px; */
+      font-size: clamp(1.25rem, 3.5vw , 2.75rem);
+      /* desktop */
+      line-height: 1.02;
+    }
+
+    .hero .subtitle {
+      margin-top: 8px;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 18px;
+    }
+
+    .hero .hero-img {
+      /* width: 360px; */
+      width: clamp(140px, 28vw , 360px);
+      /* desktop */
+      height: auto;
+      border-radius: 12px;
+      flex-shrink: 0;
+      box-shadow: 0 12px 40px rgba(2, 6, 23, 0.6);
+    }
+
+    /* گرید کارت‌ها */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px 0;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+    }
+
+    /* دکمه */
+    .cta {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 22px;
+      /* desktop */
+      background: var(--accent);
+      color: #111;
+      font-weight: 700;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    /* ===== Media Queries (desktop -> tablet -> mobile) ===== */
+    /* <= 1024px */
+    @media (max-width:1024px) {
+      .container {
+        padding: 24px;
+      }
+
+      .hero {
+        padding: 22px;
+      }
+
+      /* .hero .title {
+        font-size: 36px;
+      } */
+
+      /* .hero .hero-img {
+        width: 300px;
+      } */
+
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .cta {
+        padding: 12px 18px;
+      }
+    }
+
+    /* <= 768px */
+    @media (max-width:768px) {
+      .container {
+        padding: 18px;
+        margin: 18px auto;
+      }
+
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 18px;
+      }
+
+      /* .hero .title {
+        font-size: 28px;
+      } */
+
+      /* .hero .hero-img {
+        width: 220px;
+      }
+ */
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+
+      .cta {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+      }
+    }
+
+    /* <= 480px */
+    @media (max-width:480px) {
+      .container {
+        padding: 12px;
+        margin: 12px;
+      }
+
+      /* .hero .title {
+        font-size: 20px;
+      } */
+
+      /* .hero .hero-img {
+        width: 140px;
+      } */
+
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .card {
+        padding: 12px;
+      }
+
+      .cta {
+        padding: 10px 12px;
+        width: 100%;
+        text-align: center;
+      }
+    }
